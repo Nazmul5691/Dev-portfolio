@@ -1,182 +1,159 @@
-/* common shared styles */
-body{
+/* common shared styles*/
+body {
+    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
-
-
-.text-primary{
-    color:#FD6E0A
+.text-primary {
+    color: #FD6E0A;
 }
-
-
-.btn-primary{
+.btn-primary {
     border-radius: 5px;
     background: #FD6E0A;
     border: 0;
     color: white;
-    font-size:  20px;
+    font-size: 20px;
     font-weight: 700;
     padding: 15px 35px;
 }
-
-.section-title{
+.section-title {
     color: #181818;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
-    
 }
-
-.section-description{
+.section-description {
     color: #757575;
     text-align: center;
     font-size: 18px;
-    
 }
 /* nav related styles */
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 200px;
+    margin: 0 200px;
 }
-
-
-.nav-title{
+.nav-title {
     color: #181818;
     font-size: 45px;
     font-weight: 800;
-    
 }
-nav > ul{
+nav>ul {
     display: flex;
     align-items: center;
 }
-nav li{
+nav li {
     list-style: none;
     margin-right: 50px;
 }
-nav a{
+nav a {
     text-decoration: none;
     color: #474747;
 }
-
-.header{
-    background: #FFF8F3;
-    background-image: url(images/header_bg.png);
+/* header related styles */
+.header {
+    background-color: #FFF8F3;
+    background-image: url('../images/header_bg.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
     background-position: bottom right;
+    background-position: bottom right, top left;
 }
-.banner{
-    padding: 30px 30px 0px 150px ;
+
+.banner {
+    padding: 30px 30px 0px 150px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.banner .profile-pic{
+.banner-content {
+    max-width: 500px;
+}
+.banner .profile-pic {
     width: 500px;
 }
-.banner-grity{
+.banner-greeting {
     font-size: 45px;
     color: #474747;
     margin-bottom: 0;
 }
-.banner-heading{
+.banner-title {
     font-size: 85px;
     font-weight: 700;
     margin-top: 5px;
     margin-bottom: 20px;
 }
-.banner-description{
-    margin-bottom: 30px;
-
-}
-.banner-content{
-    max-width: 500px;
-}
-
-/* main section style */
-main{
+/* main section styles */
+main {
     max-width: 1140px;
     margin: 0 auto;
-    max-height: 550px;
 }
-main section{
+main section {
     margin-top: 130px;
 }
-/* about section style  */
-.about{
+/* about section styles */
+.about {
     padding: 130px;
     border-radius: 10px;
     background: #FFF8F3;
     margin: 130px 0;
 }
-.about-info-container{
+.about-info-container {
     display: flex;
     justify-content: space-around;
-    /* height: 400px; */
 }
-.about-info{
+.about-info {
     text-align: center;
 }
-
-/* skill */
-
-#what-i-do-description{
+/* skills related styles */
+#what-i-do-description {
     padding: 30px 150px;
 }
-
-.skills-container{
+.skills-container {
     display: flex;
     gap: 24px;
 }
-
-.skill{
+.skill {
     padding: 30px;
     border-radius: 5px;
     background: #FFF;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-.skill-description{
-    color:  #757575;
+.skill-description {
+    color: #757575;
 }
-
-/* resume-column-title */
-
-.resume-column-title{
+/* Resume Section styles */
+.resume-column-title {
     color: #474747;
     font-size: 30px;
     font-weight: 700;
-    
 }
-.resume-container{
-   display: flex;
-   gap:50px;
-
+.resume-container {
+    display: flex;
+    gap: 50px;
 }
-.resume-item-description , .resume-item-institute{
-    color: #757575;
-
-}
-.resume-item-title{
-    color: #474747; 
+.resume-item-title {
+    color: #474747;
     font-size: 25px;
     font-weight: 700;
     margin-bottom: 10px;
-    
 }
-.resume-item-institute{
+.resume-item-institute {
     margin-bottom: 20px;
     margin-top: 0px;
 }
-
-.resume-container hr{
+.resume-item-institute,
+.resume-item-description {
+    color: #757575;
+}
+.resume-container hr {
     margin: 30px;
 }
-.download-cv{
+.download-cv {
     text-align: center;
     margin-top: 50px;
 }
+/* footer style */
 footer {
     display: flex;
     gap: 100px;
@@ -200,4 +177,5 @@ textarea {
     background: #FFF;
     border: 0;
     width: 100%;
+    
 }
